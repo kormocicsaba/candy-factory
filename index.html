@@ -24,9 +24,9 @@
     var fill = document.querySelector("#fill");
     var config = {
       arguments: [],
-      dataUrl: "Build/WebGL.data.unityweb",
-      frameworkUrl: "Build/WebGL.framework.js.unityweb",
-      codeUrl: "Build/WebGL.wasm.unityweb",
+      dataUrl: "Build/728399e99320ba7ce15b67d757901415.data.unityweb",
+      frameworkUrl: "Build/27152be407ba94e97204df452a87a433.framework.js.unityweb",
+      codeUrl: "Build/6853cf4d3a79c88f6a57fffd1b58817d.wasm.unityweb",
       streamingAssetsUrl: "StreamingAssets",
       companyName: "Candy Factory",
       productName: "Candy Factory _ Shop",
@@ -35,7 +35,7 @@
       devicePixelRatio: Math.min(window.devicePixelRatio || 1, 2),
     };
     var script = document.createElement("script");
-    script.src = "Build/WebGL.loader.js";
+    script.src = "Build/f13714711d1cddae6591f8969cab6974.loader.js";
     script.onload = function () {
       createUnityInstance(canvas, config, function (p) { fill.style.width = (100 * p) + "%"; })
         .then(function () { loading.style.opacity = 0; setTimeout(function () { loading.remove(); }, 300); canvas.focus(); })
